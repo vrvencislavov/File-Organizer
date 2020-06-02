@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"
+          href="../../static/css/main.css"/>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<header>
+    <th:block th:include="~{fragments/nav-bar}"></th:block>
+</header>
+
+<hr/>
+<br>
+
+<h3>Files List</h3>
+<div>
+<table id="list">
+    <tr>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:each="todo : ${list}">
+        <td>
+                <span th:text="${todo.name}">Name</span>
+        </td>
+        <td>
+            <span th:text="${todo.user_name}">User</span>
+        </td>
+        <td>
+
+            <div id="inner-menu">
+
+                <a class="inner-menu-item" th:href="@{/home/delete/{id}(id=${todo.id})}" enctype="multipart/form-data"  href="#">
+                      <img th:src="@{/images/delete.png}"
+                                     src="../../static/images/edit.png" hspace="20px"></a>
+                </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</div>
+
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>

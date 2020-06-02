@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"
+          href="../../static/css/main.css"/>
+</head>
+<body>
+
+<div th:replace="fragments/header.html :: header"></div>
+<div th:replace="fragments/navigation.html :: nav"></div>
+
+<div id="container">
+    <h3>To do, to do, todo todo todo todo todooo﻿</h3>
+
+    <div id="add">
+        <a th:href="@{/todo/create}"
+           href="todo-create.html"><img th:src="@{/images/add.png}"
+                                        src="../../static/images/add.png"></a>
+    </div>
+
+    <div>
+        <table id="list">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Created</th>
+                <th>Options</th>
+            </tr>
+            <tr th:each="file : ${list}">
+                <td>
+                    <a th:href="@{/todo/{id}(id=${file.id})}" href="#">
+                        <span th:text="${file.name}">Title</span>
+                    </a>
+                </td>
+                <td>
+                    <div id="inner-menu">
+                        <a class="inner-menu-item" th:href="@{/todo/edit/{id}(id=${todo.id})}"
+                           href="todo-edit.html"><img th:src="@{/images/edit.png}"
+                                                      src="../../static/images/edit.png" hspace="20px"></a>
+                        <a class="inner-menu-item" th:href="@{/todo/delete/{id}(id=${todo.id})}"
+                           href="#"><img th:src="@{/images/delete.png}"
+                                         src="../../static/images/edit.png" hspace="20px"></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
