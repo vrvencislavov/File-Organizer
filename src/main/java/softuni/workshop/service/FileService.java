@@ -2,6 +2,7 @@ package softuni.workshop.service;
 
 import org.springframework.web.multipart.MultipartFile;
 import softuni.workshop.domain.entities.FileSaving;
+import softuni.workshop.domain.entities.User;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +17,8 @@ public interface FileService {
       FileSaving get(int id);
 
      List<FileSaving> get();
+
+     void changeEnableType(FileSaving file);
 
 
 }

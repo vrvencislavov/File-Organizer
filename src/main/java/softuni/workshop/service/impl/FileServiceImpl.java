@@ -1,5 +1,6 @@
 package softuni.workshop.service.impl;
 
+import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -75,6 +76,7 @@ public class FileServiceImpl implements FileService {
                  fileSaving.setName(file.getOriginalFilename());
                  fileSaving.setUser_name(authentication.getName());
                  fileSaving.setFilePath(copyLocation.toString());
+                 fileSaving.setEnable(false);
 
                  this.fileRepository.saveAndFlush(fileSaving);
 
@@ -117,5 +119,20 @@ public class FileServiceImpl implements FileService {
        return fileRepository.findAll();
     }
 
+    @Override
+    public void changeEnableType(FileSaving fileSaving) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        List<FileSaving> files = this.fileRepository.findAll();
+
+        if(authentication != null){
+            for (FileSaving file : files) {
+                if(fileSaving.getId().equals(file.getId()) && authentication.getName().equals(file.getUser_name())){
+                    file.setEnable(true);
+                    this.fileRepository.saveAndFlush(file);
+                }
+            }
+        }
+     }
 }
+
 

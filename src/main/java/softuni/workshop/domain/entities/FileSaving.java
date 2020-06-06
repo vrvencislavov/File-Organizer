@@ -10,6 +10,7 @@ public class FileSaving {
     private String name;
     private String user_name;
     private String filePath;
+    private boolean isEnable;
 
     public FileSaving() {
     }
@@ -49,6 +50,15 @@ public class FileSaving {
 
     public void setFilePath(String filePath) {
         this.filePath = filePath;
+    }
+
+    @Column(name = "is_enable")
+    public boolean isEnable() {
+        return isEnable;
+    }
+
+    public void setEnable(boolean enable) {
+        isEnable = enable;
     }
 
     //    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

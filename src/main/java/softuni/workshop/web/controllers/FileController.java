@@ -1,5 +1,6 @@
 package softuni.workshop.web.controllers;
 
+import org.apache.logging.log4j.message.Message;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
@@ -68,6 +69,25 @@ public class FileController extends BaseController {
         file.setId(id);
 
         fileService.delete(file);
+
+        model.addAttribute("list", fileService.get());
+        return "dir/delete";
+    }
+
+    @GetMapping("/enable")
+    public String enable(Model model) {
+        model.addAttribute("list", fileService.get());
+        return "dir/delete";
+    }
+
+    @RequestMapping(value = "/enable/{id}", method = RequestMethod.GET)
+    public String enableFileDownload(@PathVariable int id, Model model) {
+        FileSaving file = new FileSaving();
+        file.setId(id);
+
+
+
+        fileService.changeEnableType(file);
 
         model.addAttribute("list", fileService.get());
         return "dir/delete";

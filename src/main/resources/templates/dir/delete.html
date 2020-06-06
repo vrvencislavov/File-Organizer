@@ -21,6 +21,7 @@
         <th>Name</th>
         <th>User Name</th>
         <th>Delete</th>
+        <th>Enable</th>
     </tr>
     <tr th:each="todo : ${list}">
         <td>
@@ -29,6 +30,7 @@
         <td>
             <span th:text="${todo.user_name}">User</span>
         </td>
+
         <td>
 
             <div id="inner-menu">
@@ -38,6 +40,13 @@
                                      src="../../static/images/edit.png" hspace="20px"></a>
                 </a>
             </div>
+        </td>
+        <td>
+
+            <a class="inner-menu-item"  th:href="@{/home/enable/{id}(id=${todo.id})}" href="#">
+                <div class="button-holder mt-3 d-flex justify-content-left">
+                    <button type="submit" class="btn bg-black glow-button">Enable</button>
+                </div>
         </td>
     </tr>
 </table>

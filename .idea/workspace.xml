@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="" />
+    <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/FileSaving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/FileSaving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/FileUtilImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/ValidatorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/ValidatorUtilImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/XmlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/XmlParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/FileSaving.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/FileSaving.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/service/FileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/FileServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/FileUtilImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/ValidatorUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/ValidatorUtilImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/XmlParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/XmlParserImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +65,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="workshop" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,23 +109,27 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\static\css" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\static" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="softuni.workshop.error" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates\dir" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates\todo" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates\upload" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates\user" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="softuni.workshop.error" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\static\css" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -166,6 +201,14 @@
       <workItem from="1590060410842" duration="77000" />
       <workItem from="1590391478443" duration="3876000" />
       <workItem from="1591094291248" duration="15075000" />
+      <workItem from="1591169254997" duration="4058000" />
+      <workItem from="1591211179793" duration="691000" />
+      <workItem from="1591259891370" duration="2025000" />
+      <workItem from="1591262225544" duration="1117000" />
+      <workItem from="1591276345574" duration="5933000" />
+      <workItem from="1591369094501" duration="24000" />
+      <workItem from="1591426781214" duration="7758000" />
+      <workItem from="1591441246905" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="upload and delete">
       <created>1585747677376</created>
@@ -193,6 +236,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upload and delete" />
@@ -307,5 +363,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584270322365" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
