@@ -85,8 +85,6 @@ public class FileController extends BaseController {
         FileSaving file = new FileSaving();
         file.setId(id);
 
-
-
         fileService.changeEnableType(file);
 
         model.addAttribute("list", fileService.get());

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset ="utf-8">
     <title>Side menu bar css</title>
@@ -16,10 +16,11 @@
         <li><a class="nav-link" th:href="@{/dash}"><i class="fas fa-qrcode"></i>Home</a></li>
         <li><a class="nav-link" th:href="@{/home/upload}"><i class="fas fa-link"></i>Upload</a></li>
         <li><a class="nav-link" th:href="@{/home/delete}"><i class="fas fa-stream"></i>Delete</a></li>
+        <div sec:authorize="hasRole('ADMIN')">
+        <li><a class="nav-link" th:href="@{/admin}" ><i class="fas fa-stream"></i>ADMIN</a></li>
+        </div>
         <li><a class="nav-link" th:href="@{/logout}"><i class="fas fa-calendar-week"></i>Logout</a></li>
-        <li><a href="#"><i class="fas fa-question-circle"></i>About</a></li>
-        <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
-        <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+
     </ul>
 </div>
 

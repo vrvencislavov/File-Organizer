@@ -3,31 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/FileSaving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/FileSaving.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/FileUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/FileUtilImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/ValidatorUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/ValidatorUtilImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/XmlParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/util/XmlParserImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/FileSaving.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/FileSaving.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/service/FileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/FileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/FileUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/FileUtilImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/ValidatorUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/ValidatorUtilImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/XmlParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/util/XmlParserImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -208,7 +187,7 @@
       <workItem from="1591276345574" duration="5933000" />
       <workItem from="1591369094501" duration="24000" />
       <workItem from="1591426781214" duration="7758000" />
-      <workItem from="1591441246905" duration="587000" />
+      <workItem from="1591441246905" duration="2511000" />
     </task>
     <task id="LOCAL-00001" summary="upload and delete">
       <created>1585747677376</created>
@@ -231,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585895254543</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="enable">
+      <created>1591441966410</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591441966410</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upload and delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload and delete" />
+    <MESSAGE value="enable" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Deployment" timestamp="1585895138311">
