@@ -125,6 +125,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void returnRole(User user) {
+
+        List<User> users = this.userRepository.findAll();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        Role role = this.roleRepository.findByAndAuthority("ROLE_USER");
+        Set<Role> roles = new HashSet<>();
+        roles.add(role);
+
+        if(authentication != null){
+            for (User user1 : users) {
+                if(user.getId().equals(user1.getId())){
+                    user1.setAuthorities(roles);
+                    this.userRepository.saveAndFlush(user1);
+                }
+            }
+        }
+    }
+
+    @Override
     public void delete(User user) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         List<User> users =  this.userRepository.findAll();

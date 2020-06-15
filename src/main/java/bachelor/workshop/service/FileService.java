@@ -12,13 +12,19 @@ public interface FileService {
 
      void uploadFile(MultipartFile file);
 
-     void delete(FileSaving fileSaving);
+
+     boolean delete(FileSaving fileSaving);
 
       FileSaving get(int id);
 
      List<FileSaving> get();
 
-     void changeEnableType(FileSaving file);
+     boolean changeEnableType(FileSaving file);
+
+     List<FileSaving> sortByUsername();
+
+     List<FileSaving> findByKeyword(String keyword);
+
 
 
 }

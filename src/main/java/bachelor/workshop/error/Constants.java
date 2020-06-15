@@ -1,4 +1,4 @@
-package softuni.workshop.error;
+package bachelor.workshop.error;
 
 public class Constants {
 

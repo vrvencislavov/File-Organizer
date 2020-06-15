@@ -73,4 +73,15 @@ public class AdminController {
         model.addAttribute("list2", userService.get());
         return "dir/admin";
     }
+    @RequestMapping(value = "/returnRole/{id}", method = RequestMethod.GET)
+    public String returnRole(@PathVariable int id, Model model) {
+        User user = new User();
+        user.setId(id);
+
+        this.userService.returnRole(user);
+
+        model.addAttribute("list2", userService.get());
+        return "dir/admin";
+    }
+
 }

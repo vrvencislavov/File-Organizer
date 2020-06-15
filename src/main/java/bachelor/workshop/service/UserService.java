@@ -24,6 +24,8 @@ public interface UserService extends UserDetailsService {
 
     void changeR(User user);
 
+    void returnRole(User user);
+
     void delete(User user);
 
 

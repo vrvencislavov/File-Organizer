@@ -1,6 +1,7 @@
 package softuni.workshop.domain.entities;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "files")
@@ -11,6 +12,7 @@ public class FileSaving {
     private String user_name;
     private String filePath;
     private boolean isEnable;
+    private String date;
 
     public FileSaving() {
     }
@@ -59,6 +61,15 @@ public class FileSaving {
 
     public void setEnable(boolean enable) {
         isEnable = enable;
+    }
+
+    @Column(name = "date")
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     //    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

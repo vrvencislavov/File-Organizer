@@ -3,6 +3,8 @@ package softuni.workshop.domain.entities;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Set;
 
 @Entity
@@ -11,6 +13,9 @@ public class User implements UserDetails {
 
     //TODO ID
     private Integer id;
+
+    @NotNull(message = "please enter a username")
+    @Size(min = 3, max = 15, message = "Username must be between 3 ot 15 symbols")
     private String username;
     private String password;
     private String email;
@@ -49,7 +54,7 @@ public class User implements UserDetails {
         this.password = password;
     }
 
-    @Column(name = "email", nullable = false, unique = true)
+   @Column(name = "email", nullable = false, unique = true)
     public String getEmail() {
         return email;
     }
