@@ -1,4 +1,4 @@
-package softuni.workshop.web.controllers;
+package bachelor.workshop.web.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,14 +9,12 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.servlet.ModelAndView;
-import softuni.workshop.domain.entities.User;
-import softuni.workshop.domain.models.binding.UserRegisterBindingModel;
-import softuni.workshop.domain.models.service.UserServiceModel;
-import softuni.workshop.service.UserService;
+import bachelor.workshop.domain.entities.User;
+import bachelor.workshop.domain.models.binding.UserRegisterBindingModel;
+import bachelor.workshop.domain.models.service.UserServiceModel;
+import bachelor.workshop.service.UserService;
 
-import javax.validation.Valid;
 import java.util.List;
 
 

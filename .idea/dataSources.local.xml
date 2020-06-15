@@ -11,10 +11,7 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema">
-            <name qname="@" />
-            <name qname="work_shop_db" />
-          </node>
+          <node kind="schema" qname="work_shop_db" />
         </introspection-scope>
       </schema-mapping>
     </data-source>

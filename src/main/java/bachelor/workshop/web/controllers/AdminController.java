@@ -1,4 +1,4 @@
-package softuni.workshop.web.controllers;
+package bachelor.workshop.web.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,14 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import softuni.workshop.domain.entities.Role;
-import softuni.workshop.domain.entities.User;
-import softuni.workshop.repository.UserRepository;
-import softuni.workshop.service.FileService;
-import softuni.workshop.service.UserService;
-
-import java.util.ArrayList;
-import java.util.Collection;
+import bachelor.workshop.domain.entities.User;
+import bachelor.workshop.repository.UserRepository;
+import bachelor.workshop.service.FileService;
+import bachelor.workshop.service.UserService;
 
 @Controller
 public class AdminController {

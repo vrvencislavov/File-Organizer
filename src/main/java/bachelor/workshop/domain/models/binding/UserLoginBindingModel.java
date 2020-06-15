@@ -1,4 +1,4 @@
-package softuni.workshop.domain.models.binding;
+package bachelor.workshop.domain.models.binding;
 
 public class UserLoginBindingModel {
 

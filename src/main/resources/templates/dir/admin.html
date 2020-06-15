@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"
           href="../../static/css/main.css"/>
     <th:block th:include="~{fragments/head}"></th:block>
+    <title>Admin panel</title>
 </head>
 <body>
 <header>
@@ -14,26 +15,28 @@
 <hr/>
 <br>
 
-<h3>Files List</h3>
 <div>
-    <table id="list2">
+    <table id="list">
         <tr>
-            <th>Name</th>
-            <th>User_Role</th>
-            <th>Edit</th>
+            <th>User name</th>
+            <th>User role</th>
+            <th>Edit User Role</th>
+            <th>Edit Admin Role</th>
+            <th>Delete User</th>
         </tr>
         <tr th:each="todo : ${list2}">
             <td>
                 <span th:text="${todo.username}">Name</span>
             </td>
             <td>
-                <p th:each="auth : ${todo.authorities}"
-                   th:text="${auth.authority.replaceFirst('ROLE_', '')}">
-
+              <span>
+                   <p th:each="auth : ${todo.authorities}"
+                      th:text="${auth.authority.replaceFirst('ROLE_', '')}">
                 </p>
+              </span>
             </td>
-            <td>
 
+            <td>
                 <div id="inner-menu">
                     <a class="inner-menu-item" th:href="@{/admin1/{id}(id=${todo.id})}" href="#">
                         <img th:src="@{/images/edit.png}"
@@ -42,10 +45,16 @@
                 </div>
             </td>
             <td>
-                    <a class="inner-menu-item" th:href="@{/admin/{id}(id=${todo.id})}" href="#">
-                        <img th:src="@{/images/delete.png}"
-                             src="../../static/images/edit.png" hspace="20px"></a>
-                    </a>
+                <a class="inner-menu-item" th:href="@{/returnRole/{id}(id=${todo.id})}" href="#">
+                    <img th:src="@{/images/edit.png}"
+                         src="../../static/images/edit.png" hspace="20px"></a>
+                </a>
+            </td>
+            <td>
+                <a class="inner-menu-item" th:href="@{/admin/{id}(id=${todo.id})}" href="#">
+                    <img th:src="@{/images/delete.png}"
+                         src="../../static/images/edit.png" hspace="20px"></a>
+                </a>
             </td>
         </tr>
     </table>

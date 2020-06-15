@@ -1,4 +1,4 @@
-package softuni.workshop.config;
+package bachelor.workshop.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -30,6 +30,4 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .logout()
                 .logoutSuccessUrl("/");
     }
-
-
 }

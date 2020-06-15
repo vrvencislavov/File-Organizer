@@ -1,35 +1,25 @@
-package softuni.workshop.service.impl;
+package bachelor.workshop.service.impl;
 
 import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
-import softuni.workshop.domain.entities.FileSaving;
-import softuni.workshop.domain.entities.Role;
-import softuni.workshop.domain.entities.User;
-import softuni.workshop.domain.models.service.UserServiceModel;
-import softuni.workshop.error.Constants;
-import softuni.workshop.repository.RoleRepository;
-import softuni.workshop.repository.UserRepository;
-import softuni.workshop.service.RoleService;
-import softuni.workshop.service.UserService;
+import bachelor.workshop.domain.entities.Role;
+import bachelor.workshop.domain.entities.User;
+import bachelor.workshop.domain.models.service.UserServiceModel;
+import bachelor.workshop.error.Constants;
+import bachelor.workshop.repository.RoleRepository;
+import bachelor.workshop.repository.UserRepository;
+import bachelor.workshop.service.RoleService;
+import bachelor.workshop.service.UserService;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.*;
 
 @Service

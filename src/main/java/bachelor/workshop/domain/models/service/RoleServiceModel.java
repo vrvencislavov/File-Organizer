@@ -1,4 +1,4 @@
-package softuni.workshop.domain.models.service;
+package bachelor.workshop.domain.models.service;
 
 public class RoleServiceModel extends BaseServiceModel {
 

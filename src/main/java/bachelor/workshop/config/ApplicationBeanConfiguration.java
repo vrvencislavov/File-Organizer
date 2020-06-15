@@ -1,4 +1,4 @@
-package softuni.workshop.config;
+package bachelor.workshop.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +8,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 public class ApplicationBeanConfiguration {
 
-    //TODO
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {

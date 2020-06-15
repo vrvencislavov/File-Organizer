@@ -1,31 +1,17 @@
-package softuni.workshop.web.controllers;
+package bachelor.workshop.web.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import softuni.workshop.domain.entities.User;
-import softuni.workshop.domain.models.service.UserServiceModel;
-import softuni.workshop.repository.UserRepository;
-import softuni.workshop.service.UserService;
+import bachelor.workshop.domain.entities.User;
+import bachelor.workshop.domain.models.service.UserServiceModel;
+import bachelor.workshop.repository.UserRepository;
+import bachelor.workshop.service.UserService;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 

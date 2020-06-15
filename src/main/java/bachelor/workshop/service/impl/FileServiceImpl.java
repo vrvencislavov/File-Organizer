@@ -1,4 +1,4 @@
-package softuni.workshop.service.impl;
+package bachelor.workshop.service.impl;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,14 +7,14 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
-import softuni.workshop.domain.entities.FileSaving;
-import softuni.workshop.domain.entities.User;
-import softuni.workshop.domain.models.service.UserServiceModel;
-import softuni.workshop.error.FileStorageException;
-import softuni.workshop.repository.FileRepository;
-import softuni.workshop.repository.UserRepository;
-import softuni.workshop.service.FileService;
-import softuni.workshop.service.UserService;
+import bachelor.workshop.domain.entities.FileSaving;
+import bachelor.workshop.domain.entities.User;
+import bachelor.workshop.domain.models.service.UserServiceModel;
+import bachelor.workshop.error.FileStorageException;
+import bachelor.workshop.repository.FileRepository;
+import bachelor.workshop.repository.UserRepository;
+import bachelor.workshop.service.FileService;
+import bachelor.workshop.service.UserService;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -179,6 +179,8 @@ public class FileServiceImpl implements FileService {
     public List<FileSaving> get() {
         return fileRepository.findAll();
     }
+
+//
 
     @Override
     public List<FileSaving> findByKeyword(String keyword) {

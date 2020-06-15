@@ -2,12 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/venci.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/files.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/sorted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/WorkshopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/WorkshopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/config/ApplicationBeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/config/ApplicationSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/FileSaving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/FileSaving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/models/binding/UserLoginBindingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/models/binding/UserLoginBindingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/models/binding/UserRegisterBindingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/models/binding/UserRegisterBindingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/models/service/BaseServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/models/service/BaseServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/models/service/FileServiceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/models/service/RoleServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/models/service/RoleServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/domain/models/service/UserServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/models/service/UserServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/error/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/error/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/error/FileStorageException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/error/FileStorageException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/repository/FileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/workshop/web/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/pink-panther.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todo-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todo-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todo-get-by-id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/softuni/workshop/WorkshopApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bachelor/workshop/WorkshopApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/WorkshopApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/config/ApplicationBeanConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/config/ApplicationSecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/FileSaving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/entities/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/models/binding/UserLoginBindingModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/models/binding/UserRegisterBindingModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/models/service/BaseServiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/models/service/FileServiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/models/service/RoleServiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/domain/models/service/UserServiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/error/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/error/FileStorageException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/repository/FileRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/FileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/workshop/web/controllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/pink-panther.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todo-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todo-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todo-get-by-id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/softuni/workshop/WorkshopApplicationTests.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +148,8 @@
       <list>
         <option value="Interface" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,29 +181,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/java/rush-hour" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\dir" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\todo" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\upload" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\user" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="softuni.workshop.error" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
       <recent name="D:\java\workshop-skeleton\src\main\resources" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\static\css" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="softuni.workshop.error" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\dir" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\todo" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\upload" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +221,7 @@
   <component name="RunManager">
     <configuration name="WorkshopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="workshop" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.workshop.WorkshopApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bachelor.workshop.WorkshopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,7 +282,22 @@
       <workItem from="1591276345574" duration="5933000" />
       <workItem from="1591369094501" duration="24000" />
       <workItem from="1591426781214" duration="7758000" />
-      <workItem from="1591441246905" duration="2511000" />
+      <workItem from="1591441246905" duration="7757000" />
+      <workItem from="1591513171967" duration="9210000" />
+      <workItem from="1591527718232" duration="9297000" />
+      <workItem from="1591614080112" duration="9431000" />
+      <workItem from="1591686412248" duration="9573000" />
+      <workItem from="1591700578790" duration="12137000" />
+      <workItem from="1591773050331" duration="9844000" />
+      <workItem from="1591789077930" duration="15531000" />
+      <workItem from="1591858866314" duration="11491000" />
+      <workItem from="1591871756349" duration="267000" />
+      <workItem from="1591877537696" duration="8371000" />
+      <workItem from="1591945299657" duration="11017000" />
+      <workItem from="1591967572735" duration="3267000" />
+      <workItem from="1592033048199" duration="5457000" />
+      <workItem from="1592145058549" duration="491000" />
+      <workItem from="1592210554102" duration="8813000" />
     </task>
     <task id="LOCAL-00001" summary="upload and delete">
       <created>1585747677376</created>
@@ -217,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591441966410</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="enable">
+      <created>1591443999923</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591443999923</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +354,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/SpringMVC" />
+    </ignored-roots>
     <MESSAGE value="upload and delete" />
     <MESSAGE value="enable" />
     <option name="LAST_COMMIT_MESSAGE" value="enable" />
@@ -352,14 +472,10 @@
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584270322365" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/softuni/workshop/service/impl/FileServiceImpl.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="authentication" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

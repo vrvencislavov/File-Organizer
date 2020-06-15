@@ -1,7 +1,6 @@
-package softuni.workshop.domain.entities;
+package bachelor.workshop.domain.entities;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "files")

@@ -1,6 +1,6 @@
-package softuni.workshop.service;
+package bachelor.workshop.service;
 
-import softuni.workshop.domain.models.service.RoleServiceModel;
+import bachelor.workshop.domain.models.service.RoleServiceModel;
 
 import java.util.Set;
 

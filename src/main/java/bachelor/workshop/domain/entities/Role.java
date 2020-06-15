@@ -1,4 +1,4 @@
-package softuni.workshop.domain.entities;
+package bachelor.workshop.domain.entities;
 
 import org.springframework.security.core.GrantedAuthority;
 

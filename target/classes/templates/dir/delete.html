@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"
           href="../../static/css/main.css"/>
     <th:block th:include="~{fragments/head}"></th:block>
+    <title>Delete Files</title>
 </head>
 <body>
 <header>
@@ -14,14 +15,29 @@
 <hr/>
 <br>
 
-<h3>Files List</h3>
+<a class="inner-menu-item"  th:href="@{/home/sort}" href="#">
+    <div class="button-holder mt-3 d-flex justify-content-left">
+        <button type="submit" class="btn bg-black glow-button">Sort files by user name</button>
+    </div>
+</a>
+
+<form method="POST" th:action="@{/home/search}" th:method="GET">
+    <input id="txtSearch" type="text" name="keyword"/>
+    <button type="submit">Go</button>
+</form>
+
+
+<br/>
+<h3>List of all files</h3>
 <div>
-<table id="list">
+<table id="list" width="150px">
     <tr>
         <th>Name</th>
         <th>User Name</th>
+        <th>Upload time</th>
         <th>Delete</th>
         <th>Enable</th>
+        <th>Download</th>
     </tr>
     <tr th:each="todo : ${list}">
         <td>
@@ -30,7 +46,9 @@
         <td>
             <span th:text="${todo.user_name}">User</span>
         </td>
-
+        <td>
+            <span th:text="${todo.date}">Time</span>
+        </td>
         <td>
 
             <div id="inner-menu">
@@ -39,6 +57,9 @@
                       <img th:src="@{/images/delete.png}"
                                      src="../../static/images/edit.png" hspace="20px"></a>
                 </a>
+                <span th:if="${todo.id == id}">
+                  <div th:if="${deleteMessage}" th:text="${deleteMessage}" class="alert alert-danger"/>
+            </span>
             </div>
         </td>
         <td>
@@ -47,8 +68,22 @@
                 <div class="button-holder mt-3 d-flex justify-content-left">
                     <button type="submit" class="btn bg-black glow-button">Enable</button>
                 </div>
+                <span th:text="${todo.enable}">status</span>
             </a>
-                <div th:text="${error}"></div>
+            <span th:if="${todo.id == id}">
+                  <div th:if="${enableMessage}" th:text="${enableMessage}" class="alert alert-danger"/>
+            </span>
+        </td>
+        <td>
+            <a class="inner-menu-item"  th:href="@{/home/download/{id}(id=${todo.id})}" href="#">
+                <div class="button-holder mt-3 d-flex justify-content-left">
+                    <button type="submit" class="btn bg-black glow-button">Download</button>
+                </div>
+            </a>
+            <span th:if="${todo.id == id}">
+                  <div th:if="${errorMessage}" th:text="${errorMessage}" class="alert alert-danger"/>
+            </span>
+
         </td>
     </tr>
 </table>

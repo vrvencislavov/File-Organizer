@@ -1,11 +1,8 @@
-package softuni.workshop.service;
+package bachelor.workshop.service;
 
 import org.springframework.web.multipart.MultipartFile;
-import softuni.workshop.domain.entities.FileSaving;
-import softuni.workshop.domain.entities.User;
+import bachelor.workshop.domain.entities.FileSaving;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 public interface FileService {
@@ -23,7 +20,8 @@ public interface FileService {
 
      List<FileSaving> sortByUsername();
 
-     List<FileSaving> findByKeyword(String keyword);
+    List<FileSaving> findByKeyword(String keyword);
+
 
 
 

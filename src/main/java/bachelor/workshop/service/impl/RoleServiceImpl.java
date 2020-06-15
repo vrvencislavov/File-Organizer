@@ -1,12 +1,12 @@
-package softuni.workshop.service.impl;
+package bachelor.workshop.service.impl;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import softuni.workshop.domain.entities.Role;
-import softuni.workshop.domain.models.service.RoleServiceModel;
-import softuni.workshop.repository.RoleRepository;
-import softuni.workshop.service.RoleService;
+import bachelor.workshop.domain.entities.Role;
+import bachelor.workshop.domain.models.service.RoleServiceModel;
+import bachelor.workshop.repository.RoleRepository;
+import bachelor.workshop.service.RoleService;
 
 import java.util.Set;
 import java.util.stream.Collectors;

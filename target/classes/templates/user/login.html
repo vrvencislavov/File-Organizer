@@ -27,6 +27,9 @@
             <div class="button-holder mt-3 d-flex justify-content-center">
                 <button type="submit" class="btn bg-black glow-button">Login</button>
             </div>
+            <div th:if="${param.error}" class="alert alert-danger">
+                Invalid username or password.
+            </div>
         </form>
         <span style="visibility: hidden">....</span>
     </main>

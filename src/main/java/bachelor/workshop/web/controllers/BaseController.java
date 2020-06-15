@@ -1,4 +1,4 @@
-package softuni.workshop.web.controllers;
+package bachelor.workshop.web.controllers;
 
 import org.springframework.web.servlet.ModelAndView;
 

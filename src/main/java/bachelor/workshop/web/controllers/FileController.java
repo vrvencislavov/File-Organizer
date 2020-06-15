@@ -1,4 +1,4 @@
-package softuni.workshop.web.controllers;
+package bachelor.workshop.web.controllers;
 
 
 
@@ -14,17 +14,16 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import softuni.workshop.domain.entities.FileSaving;
-import softuni.workshop.domain.entities.User;
-import softuni.workshop.repository.UserRepository;
-import softuni.workshop.service.FileService;
-import softuni.workshop.service.UserService;
+import bachelor.workshop.domain.entities.FileSaving;
+import bachelor.workshop.domain.entities.User;
+import bachelor.workshop.repository.UserRepository;
+import bachelor.workshop.service.FileService;
+import bachelor.workshop.service.UserService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.Comparator;
 import java.util.List;
 
 
@@ -79,8 +78,9 @@ public class FileController extends BaseController {
         if(keyword != null){
             model.addAttribute("list", fileService.findByKeyword(keyword));
 
+        }else {
+            model.addAttribute("list", fileService.get());
         }
-        model.addAttribute("list", fileService.get());
         return "dir/delete";
     }
 
@@ -258,9 +258,13 @@ public class FileController extends BaseController {
     }
 
     @GetMapping("/sort")
-    public String sort(Model model) {
-        model.addAttribute("sorting", this.fileService.sortByUsername());
+    public String sort(Model model, String keyword) {
 
+        if(keyword != null){
+            model.addAttribute("sorting", this.fileService.findByKeyword(keyword));
+        }else {
+            model.addAttribute("sorting", this.fileService.sortByUsername());
+        }
         return "dir/sorted";
     }
 }
