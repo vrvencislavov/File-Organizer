@@ -44,22 +44,22 @@ public class UserController extends BaseController {
 
         if(model.getUsername() == null && model.getEmail() == null
         && model.getPassword() == null && model.getConfirmPassword() == null){
-            String errorMessage = "Please enter a username";
+            String errorMessage = "Моля въведете потребителско име";
             modelMessage.addAttribute("errorMessage", errorMessage);
 
-            String passwordMessageConfirm = "Please enter a password";
+            String passwordMessageConfirm = "Моля въведете парола";
             modelMessage.addAttribute("passwordMessageConfirm", passwordMessageConfirm);
 
-            String passwordMessage = "Please enter a password";
+            String passwordMessage = "Моля въведете парола";
             modelMessage.addAttribute("passwordMessage", passwordMessage);
 
-            String mailMessage = "Please enter a email";
+            String mailMessage = "Моля въведете поща";
             modelMessage.addAttribute("mailMessage", mailMessage);
             return super.view("user/register");
         }
 
         if(model.getUsername() == null){
-            String errorMessage = "Please enter a username";
+            String errorMessage = "Моля въведете потребителско име";
             modelMessage.addAttribute("errorMessage", errorMessage);
             return super.view("user/register");
         }
@@ -68,7 +68,7 @@ public class UserController extends BaseController {
 
         for (User user : users) {
             if(user.getUsername().equals(model.getUsername())){
-                String userError = "This username is reserved";
+                String userError = "Потребителското име е заето";
                 modelMessage.addAttribute("userError", userError);
                 return super.view("user/register");
             }
@@ -76,19 +76,19 @@ public class UserController extends BaseController {
 
 
         if(model.getPassword() == null){
-            String passwordMessage = "Please enter a password";
+            String passwordMessage = "Моля въведете парола";
             modelMessage.addAttribute("passwordMessage", passwordMessage);
             return super.view("user/register");
         }
 
         if(model.getConfirmPassword() == null){
-            String passwordMessageConfirm = "Please enter a password";
+            String passwordMessageConfirm = "Моля въведете парола";
             modelMessage.addAttribute("passwordMessageConfirm", passwordMessageConfirm);
             return super.view("user/register");
         }
 
         if(model.getEmail() == null){
-            String mailMessage = "Please enter a email";
+            String mailMessage = "Моля въведете поща";
             modelMessage.addAttribute("mailMessage", mailMessage);
             return super.view("user/register");
         }
@@ -100,7 +100,7 @@ public class UserController extends BaseController {
         }
 
             if (!model.getPassword().equals(model.getConfirmPassword())){
-            String confirm = "Password missmatch";
+            String confirm = "Паролата не съвпада";
             modelMessage.addAttribute("confirm", confirm);
 
             return super.view("user/register");

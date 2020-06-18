@@ -17,21 +17,19 @@
 
 <form method="POST" th:action="@{/home/sort}" th:method="GET">
     <input id="txtSearch" type="text" name="keyword"/>
-    <button type="submit">Go</button>
+    <button type="submit">Търсене</button>
 </form>
 
 <br/>
-<h3>List of all files sorted by user name</h3>
+<h3>Списък на всички файлове сортирани по потребителско име</h3>
 <p></p>
 <div>
     <table id="list"  th:width="600px">
         <tr>
-            <th>Name</th>
-            <th>User Name</th>
-            <th>Upload time</th>
-            <th>Delete</th>
-            <th>Enable</th>
-            <th>Download</th>
+            <th>Име</th>
+            <th>Потребителско име</th>
+            <th>Дата на качване</th>
+            <th>Изтегляне</th>
         </tr>
         <tr th:each="todo : ${sorting}">
             <td>
@@ -44,35 +42,9 @@
                 <span th:text="${todo.date}">Time</span>
             </td>
             <td>
-
-                <div id="inner-menu">
-
-                    <a class="inner-menu-item" th:href="@{/home/deleteSort/{id}(id=${todo.id})}" enctype="multipart/form-data"  href="#">
-                        <img th:src="@{/images/delete.png}"
-                             src="../../static/images/edit.png" hspace="20px"></a>
-                    </a>
-                    <span th:if="${todo.id == id}">
-                  <div th:if="${deleteMessage}" th:text="${deleteMessage}" class="alert alert-danger"/>
-            </span>
-                </div>
-            </td>
-            <td>
-
-                <a class="inner-menu-item"  th:href="@{/home/enableSort/{id}(id=${todo.id})}" href="#">
-                    <div class="button-holder mt-3 d-flex justify-content-left">
-                        <button type="submit" class="btn bg-black glow-button">Enable</button>
-                    </div>
-                    <span th:text="${todo.enable}">status</span>
-                </a>
-                <span th:if="${todo.id == id}">
-                  <div th:if="${enableMessage}" th:text="${enableMessage}" class="alert alert-danger"/>
-            </span>
-
-            </td>
-            <td>
                 <a class="inner-menu-item"  th:href="@{/home/downloadSort/{id}(id=${todo.id})}" href="#">
                     <div class="button-holder mt-3 d-flex justify-content-left">
-                        <button type="submit" class="btn bg-black glow-button">Download</button>
+                        <button type="submit" class="btn bg-black glow-button">Изтегляне</button>
                     </div>
                 </a>
                 <span th:if="${todo.id == id}">

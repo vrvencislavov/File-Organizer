@@ -14,9 +14,8 @@
 
         <span style="visibility: hidden">....</span>
         <h1 class="text-black display-3 mt-5 display-3">
-            Welcome to File Storage Repository web site.
+           Добре дошли в уеб приложението за съхранение и управление на файлове
         </h1>
-        <h1>CREATING DIRECTORY SUCCESFULL</h1>
     </div>
     <th:block sec:authorize="isAuthenticated()">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -31,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" th:href="@{/home}">Home
+                            <a class="nav-link" th:href="@{/home}">Начало
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -46,7 +45,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
-                        <a class="nav-link" th:href="@{/home/upload}">Upload
+                        <a class="nav-link" th:href="@{/home/upload}">Качване
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -54,7 +53,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item active">
-                            <a class="nav-link" th:href="@{/home/delete}">Delete
+                            <a class="nav-link" th:href="@{/home/delete}">Изтриване
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -65,7 +64,7 @@
                         <li class="nav-item-active">
                             <form action="/logout?login" method="post">
                                 <input type="hidden" name="_csrf" value="80417983-fe8b-45c7-963e-31f6915a1560">
-                                <a class="nav-link" th:href="@{/logout}">Logout</a>
+                                <a class="nav-link" th:href="@{/logout}">Изход</a>
                             </form>
                         </li>
                     </ul>

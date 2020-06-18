@@ -99,7 +99,7 @@ public class FileServiceImpl implements FileService {
                                 .get(UPLOADED_FOLDER  + authentication.getName() + File.separator +rand_int1 + " - " + StringUtils.cleanPath(file.getOriginalFilename()));
                         Files.copy(file.getInputStream(), copyLocation, StandardCopyOption.REPLACE_EXISTING);
 
-                        fileSaving.setName(file.getOriginalFilename() + rand_int1);
+                        fileSaving.setName(rand_int1 + " - " + file.getOriginalFilename());
                         fileSaving.setUser_name(authentication.getName());
                         fileSaving.setFilePath(copyLocation.toString());
                         fileSaving.setEnable(false);
@@ -155,15 +155,43 @@ public class FileServiceImpl implements FileService {
                 }
             }
         }
+
         return false;
      }
+
+    @Override
+    public boolean backEnableType(FileSaving fileSaving) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        List<FileSaving> files = this.fileRepository.findAll();
+
+        if(authentication != null){
+            for (FileSaving file : files) {
+                if(fileSaving.getId().equals(file.getId()) && authentication.getName().equals(file.getUser_name())){
+                    file.setEnable(false);
+                    this.fileRepository.saveAndFlush(file);
+
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 
     @Override
     public List<FileSaving> sortByUsername() {
 
         List<FileSaving> files = this.fileRepository.findAll();
 
-        List<FileSaving> sortedFiles = files.stream()
+        List<FileSaving> enableFiles = new ArrayList<>();
+
+        for (FileSaving file : files) {
+            if(file.isEnable() == true){
+                enableFiles.add(file);
+            }
+        }
+
+            List<FileSaving> sortedFiles = enableFiles.stream()
                 .sorted(Comparator.comparing(FileSaving::getUser_name))
                 .collect(Collectors.toList());
 
@@ -177,15 +205,43 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public List<FileSaving> get() {
-        return fileRepository.findAll();
+
+        List<FileSaving> files = this.fileRepository.findAll();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        List<FileSaving> enableFiles = new ArrayList<>();
+
+        for (FileSaving file : files) {
+            if(file.isEnable() == true){
+                enableFiles.add(file);
+            }
+        }
+
+        return enableFiles;
     }
 
-//
+    @Override
+    public List<FileSaving> getByUser() {
+
+        List<FileSaving> files = this.fileRepository.findAll();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        List<FileSaving> filesByName = new ArrayList<>();
+
+        for (FileSaving file : files) {
+            if(authentication.getName().equals(file.getUser_name())){
+                filesByName.add(file);
+            }
+        }
+
+        return filesByName;
+    }
 
     @Override
     public List<FileSaving> findByKeyword(String keyword) {
         return this.fileRepository.findByKeyword(keyword);
     }
+
 }
 
 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"
+          href="../../static/css/main.css"/>
+    <th:block th:include="~{fragments/head}"></th:block>
+    <title>Delete Files</title>
+</head>
+<body>
+<header>
+    <th:block th:include="~{fragments/nav-bar}"></th:block>
+</header>
+
+<hr/>
+<br>
+
+
+<br/>
+<h3>Списък на всички файлове</h3>
+<div>
+    <table id="list" width="150px">
+        <tr>
+            <th>Име</th>
+            <th>Потребителско име</th>
+            <th>Дата на качване</th>
+            <th>Изтриване</th>
+            <th>Достъпност</th>
+            <th>Промяна на достъпността</th>
+        </tr>
+        <tr th:each="todo : ${list}">
+            <td>
+                <span th:text="${todo.name}">Name</span>
+            </td>
+            <td>
+                <span th:text="${todo.user_name}">User</span>
+            </td>
+            <td>
+                <span th:text="${todo.date}">Time</span>
+            </td>
+            <td>
+
+                <div id="inner-menu">
+
+                    <a class="inner-menu-item" th:href="@{/home/delete/{id}(id=${todo.id})}" enctype="multipart/form-data"  href="#">
+                        <img th:src="@{/images/delete.png}"
+                             src="../../static/images/edit.png" hspace="20px"></a>
+                    </a>
+                    <span th:if="${todo.id == id}">
+                  <div th:if="${deleteMessage}" th:text="${deleteMessage}" class="alert alert-danger"/>
+            </span>
+                </div>
+            </td>
+            <td>
+<!--                <div th:if="${todo.enable}">-->
+<!--                    <img  th:src="@{../images/img-true.png}" />-->
+<!--                </div>-->
+<!--                <div th:unless="${todo.enable}">-->
+<!--                    <img th:src="@{../images/img-false.png}" />-->
+<!--                </div>-->
+                <span th:text="${todo.enable}">status</span>
+            </td>
+            <td>
+                <div th:if="${todo.enable}">
+                    <a class="inner-menu-item"  th:href="@{/home/disable/{id}(id=${todo.id})}" href="#">
+                        <div class="button-holder mt-3 d-flex justify-content-left">
+                            <button type="submit" class="btn bg-black glow-button">Скрит</button>
+                        </div>
+                    </a>
+                </div>
+                <div th:unless="${todo.enable}">
+                <a class="inner-menu-item"  th:href="@{/home/enable/{id}(id=${todo.id})}" href="#">
+                    <div class="button-holder mt-3 d-flex justify-content-left">
+                        <button type="submit" class="btn bg-black glow-button">Публичен</button>
+                    </div>
+                </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>

@@ -90,29 +90,15 @@ public class FileController extends BaseController {
         file.setId(id);
 
         if(!fileService.delete(file)){
-            String deleteMessage = "You have no rights";
+            String deleteMessage = "Необходими са права";
             model.addAttribute("deleteMessage", deleteMessage);
         }
 
 
-        model.addAttribute("list", fileService.get());
-        return "dir/delete";
+        model.addAttribute("list", fileService.getByUser());
+        return "dir/myfiles";
     }
 
-    @RequestMapping(value = "/deleteSort/{id}", method = RequestMethod.GET)
-    public String deleteSort(@PathVariable int id, Model model) {
-        FileSaving file = new FileSaving();
-        file.setId(id);
-
-
-        if(!fileService.delete(file)){
-            String deleteMessage = "You have no rights";
-            model.addAttribute("deleteMessage", deleteMessage);
-        }
-
-        model.addAttribute("sorting", fileService.sortByUsername());
-        return "dir/sorted";
-    }
 
     @GetMapping("/enable")
     public String enable(Model model) {
@@ -120,42 +106,39 @@ public class FileController extends BaseController {
         return "dir/delete";
     }
 
+    @GetMapping("/myFiles")
+    public String myFiles(Model model) {
+        model.addAttribute("list", fileService.getByUser());
+        return "dir/myfiles";
+    }
+
     @RequestMapping(value = "/enable/{id}", method = RequestMethod.GET)
     public String enableFileDownload(@PathVariable int id, Model model) {
 
-        List<FileSaving> files = this.fileService.get();
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-
         FileSaving fileSaving = new FileSaving();
 
         fileSaving.setId(id);
 
         if(!this.fileService.changeEnableType(fileSaving)){
-            String enableMessage = "You have no rights";
+            String enableMessage = "Необходими са права";
             model.addAttribute("enableMessage", enableMessage);
         }
 
-        model.addAttribute("list", fileService.get());
-        return "dir/delete";
+        model.addAttribute("list", fileService.getByUser());
+        return "dir/myfiles";
     }
 
-    @RequestMapping(value = "/enableSort/{id}", method = RequestMethod.GET)
-    public String enableSort(@PathVariable int id, Model model) {
-
-        List<FileSaving> files = this.fileService.get();
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    @RequestMapping(value = "/disable/{id}", method = RequestMethod.GET)
+    public String disable(@PathVariable int id, Model model) {
 
         FileSaving fileSaving = new FileSaving();
 
         fileSaving.setId(id);
 
-        if(!this.fileService.changeEnableType(fileSaving)){
-            String enableMessage = "You have no rights";
-            model.addAttribute("enableMessage", enableMessage);
-        }
+        this.fileService.backEnableType(fileSaving);
 
-        model.addAttribute("sorting", fileService.sortByUsername());
-        return "dir/sorted";
+        model.addAttribute("list", fileService.getByUser());
+        return "dir/myfiles";
     }
 
 
@@ -208,9 +191,6 @@ public class FileController extends BaseController {
 
                     FileCopyUtils.copy(inputStream, response.getOutputStream());
 
-                }else{
-                    String errorMessage = "The file is disable to download";
-                    model.addAttribute("errorMessage", errorMessage);
                 }
             }
         }
@@ -247,9 +227,6 @@ public class FileController extends BaseController {
 
                     FileCopyUtils.copy(inputStream, response.getOutputStream());
 
-                }else{
-                    String errorMessage = "The file is disable to download";
-                    model.addAttribute("errorMessage", errorMessage);
                 }
             }
         }

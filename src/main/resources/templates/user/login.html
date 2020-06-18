@@ -11,24 +11,24 @@
     </header>
     <main class="mt-5">
         <hr class="bg-hero hr-2"/>
-        <h1 class="text-center text-black display-4">Login</h1>
+        <h1 class="text-center text-black display-4">Вход</h1>
         <hr class="bg-hero w-25 hr-2"/>
         <form class="mx-auto w-25" th:method="post" th:action="@{/users/login}">
             <input type="hidden" name="_csrf" value="c95ccb2b-1afa-47bd-bf7b-a5b72739470b">
             <div class="form-group">
-                <label for="username" class="text-black mb-1">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Username..." name="username">
+                <label for="username" class="text-black mb-1">Потребителско име</label>
+                <input type="text" class="form-control" id="username" placeholder="Потребителско име..." name="username">
             </div>
             <div class="form-group">
-                <label for="password" class="text-black mb-1">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password..." name="password">
+                <label for="password" class="text-black mb-1">Парола</label>
+                <input type="password" class="form-control" id="password" placeholder="Парола..." name="password">
             </div>
             <hr class="bg-hero hr-2"/>
             <div class="button-holder mt-3 d-flex justify-content-center">
-                <button type="submit" class="btn bg-black glow-button">Login</button>
+                <button type="submit" class="btn bg-black glow-button">Вход</button>
             </div>
             <div th:if="${param.error}" class="alert alert-danger">
-                Invalid username or password.
+                Неправилно потребителско име или парола
             </div>
         </form>
         <span style="visibility: hidden">....</span>

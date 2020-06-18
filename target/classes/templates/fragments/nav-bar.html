@@ -6,17 +6,17 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" th:href="@{/}">Home
+                            <a class="nav-link" th:href="@{/}">Начало
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item">
-                            <a class="nav-link navbar-right" th:href="@{/users/login}">Login</a>
+                            <a class="nav-link navbar-right" th:href="@{/users/login}">Вход</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navbar-right" th:href="@{/users/register}">Register</a>
+                            <a class="nav-link navbar-right" th:href="@{/users/register}">Регистрация</a>
                         </li>
                     </ul>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" th:href="@{/home}">Home
+                            <a class="nav-link" th:href="@{/home}">Начало
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -46,7 +46,7 @@
                         <li class="nav-item-active">
                             <form action="/logout?login" method="post">
                                 <input type="hidden" name="_csrf" value="80417983-fe8b-45c7-963e-31f6915a1560">
-                                <a class="nav-link" th:href="@{/logout}">Logout</a>
+                                <a class="nav-link" th:href="@{/logout}">Изход</a>
                             </form>
                         </li>
                     </ul>

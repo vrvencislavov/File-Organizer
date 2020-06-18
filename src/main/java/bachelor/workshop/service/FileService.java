@@ -16,12 +16,15 @@ public interface FileService {
 
      List<FileSaving> get();
 
+     List<FileSaving> getByUser();
+
      boolean changeEnableType(FileSaving file);
+
+     boolean backEnableType(FileSaving file);
 
      List<FileSaving> sortByUsername();
 
     List<FileSaving> findByKeyword(String keyword);
-
 
 
 
