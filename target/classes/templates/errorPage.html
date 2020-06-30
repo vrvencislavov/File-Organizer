@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<br>
+<br>
+<h4>Съжаляваме, не може да открием страницата, която търсите</h4>
+<!--<div>-->
+<!--    <a class="nav-link" th:href="@{/home}">Начало</a>-->
+<!--</div>-->
+<div>
+    <a class="inner-menu-item"  th:href="@{/home}" href="#">
+        <div class="button-holder mt-3 d-flex justify-content-left">
+            <button type="submit" class="btn bg-black glow-button">Потребителски панел</button>
+        </div>
+    </a>
+</div>
+</body>
+</html>

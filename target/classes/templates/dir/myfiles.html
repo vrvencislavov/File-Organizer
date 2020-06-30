@@ -12,6 +12,16 @@
     <th:block th:include="~{fragments/nav-bar}"></th:block>
 </header>
 
+<script>
+    function myFunction() {
+        if (confirm("Are you sure to continue?") === true)
+            return true;
+        else
+            window.location("myfiles.html");
+            return false;
+    }
+</script>
+
 <hr/>
 <br>
 
@@ -39,25 +49,15 @@
                 <span th:text="${todo.date}">Time</span>
             </td>
             <td>
-
                 <div id="inner-menu">
-
-                    <a class="inner-menu-item" th:href="@{/home/delete/{id}(id=${todo.id})}" enctype="multipart/form-data"  href="#">
-                        <img th:src="@{/images/delete.png}"
-                             src="../../static/images/edit.png" hspace="20px"></a>
-                    </a>
-                    <span th:if="${todo.id == id}">
-                  <div th:if="${deleteMessage}" th:text="${deleteMessage}" class="alert alert-danger"/>
-            </span>
+                        <a class="inner-menu-item"  th:href="@{/home/delete/{id}(id=${todo.id})}"
+                           onclick="return confirm('Сигурни ли сте, че искате да изтриете този файл');" enctype="multipart/form-data"  href="#">
+                            <img th:src="@{/images/delete.png}"
+                                 src="../../static/images/edit.png" hspace="20px"></a>
+                        </a>
                 </div>
             </td>
             <td>
-<!--                <div th:if="${todo.enable}">-->
-<!--                    <img  th:src="@{../images/img-true.png}" />-->
-<!--                </div>-->
-<!--                <div th:unless="${todo.enable}">-->
-<!--                    <img th:src="@{../images/img-false.png}" />-->
-<!--                </div>-->
                 <span th:text="${todo.enable}">status</span>
             </td>
             <td>

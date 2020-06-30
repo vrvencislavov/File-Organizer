@@ -1,7 +1,13 @@
 package bachelor.workshop.web.controllers;
 
+import bachelor.workshop.domain.entities.Role;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +18,10 @@ import bachelor.workshop.domain.entities.User;
 import bachelor.workshop.repository.UserRepository;
 import bachelor.workshop.service.FileService;
 import bachelor.workshop.service.UserService;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Collection;
+import java.util.List;
 
 @Controller
 public class AdminController {
@@ -46,8 +56,12 @@ public class AdminController {
         User user = new User();
         user.setId(id);
 
-        userService.delete(user);
+//        if(user.getId() != 1) {
 
+         this.userService.delete(user);
+//         model.addAttribute("list2", userService.get());
+//        }
+           
         model.addAttribute("list2", userService.get());
         return "dir/admin";
     }
@@ -64,8 +78,10 @@ public class AdminController {
         User user = new User();
         user.setId(id);
 
-        this.userService.changeR(user);
-
+        if(user.getId() != 1) {
+            this.userService.changeR(user);
+             model.addAttribute("list2", userService.get());
+        }
         model.addAttribute("list2", userService.get());
         return "dir/admin";
     }
@@ -74,8 +90,10 @@ public class AdminController {
         User user = new User();
         user.setId(id);
 
-        this.userService.returnRole(user);
-
+        if(user.getId() != 1) {
+            this.userService.returnRole(user);
+              model.addAttribute("list2", userService.get());
+        }
         model.addAttribute("list2", userService.get());
         return "dir/admin";
     }

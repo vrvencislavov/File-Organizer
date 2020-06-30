@@ -2,37 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/img-true.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/myfiles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/CustomErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/errorPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationBeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/sorted.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/sorted.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/nav-bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/nav-bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/FileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/FileServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/myfiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/myfiles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/domain/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/domain/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/FileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/FileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/FileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/sorted.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/sorted.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/nav-bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/nav-bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/myfiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/myfiles.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,12 +50,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="work_shop_db: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -111,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="last_opened_file_path" value="D:/java/test" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -119,22 +103,22 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
-      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\dir" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\todo" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="softuni.workshop.error" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static" />
       <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
       <recent name="D:\java\workshop-skeleton\src\main\resources" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\static\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="softuni.workshop.error" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
+      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\dir" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates\todo" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -238,6 +222,21 @@
       <workItem from="1592465625469" duration="243000" />
       <workItem from="1592466211500" duration="8765000" />
       <workItem from="1592479978521" duration="7835000" />
+      <workItem from="1592512393971" duration="1551000" />
+      <workItem from="1592725517596" duration="2889000" />
+      <workItem from="1592806263220" duration="10171000" />
+      <workItem from="1592895314692" duration="3422000" />
+      <workItem from="1592917146477" duration="4513000" />
+      <workItem from="1592981954324" duration="3137000" />
+      <workItem from="1593008026578" duration="3317000" />
+      <workItem from="1593158215095" duration="6569000" />
+      <workItem from="1593175443534" duration="3728000" />
+      <workItem from="1593179318590" duration="2179000" />
+      <workItem from="1593242873574" duration="5011000" />
+      <workItem from="1593247996275" duration="2287000" />
+      <workItem from="1593329573731" duration="5954000" />
+      <workItem from="1593350256379" duration="726000" />
+      <workItem from="1593517961115" duration="5757000" />
     </task>
     <task id="LOCAL-00001" summary="upload and delete">
       <created>1585747677376</created>
@@ -415,6 +414,7 @@
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="authentication" />
+        <watch expression="authorities" />
       </configuration>
     </watches-manager>
   </component>

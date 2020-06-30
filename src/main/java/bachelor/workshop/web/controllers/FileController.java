@@ -3,10 +3,13 @@ package bachelor.workshop.web.controllers;
 
 
 
+import bachelor.workshop.repository.FileRepository;
+import org.apache.tomcat.util.http.fileupload.FileUpload;
+import org.apache.tomcat.util.http.fileupload.FileUtils;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.aspectj.util.FileUtil;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
@@ -25,6 +28,7 @@ import java.io.*;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.List;
+import java.util.Optional;
 
 
 @Controller
@@ -38,13 +42,16 @@ public class FileController extends BaseController {
     private  final FileService fileService;
     private final UserService userService;
 
+    private final FileRepository fileRepository;
+
     @Autowired
     public FileController(UserRepository userRepository, ModelMapper modelMapper,
-                          FileService fileService, UserService userService) {
+                          FileService fileService, UserService userService, FileRepository fileRepository) {
         this.userRepository = userRepository;
         this.modelMapper = modelMapper;
         this.fileService = fileService;
         this.userService = userService;
+        this.fileRepository = fileRepository;
     }
 
     @GetMapping("/upload")
@@ -89,11 +96,7 @@ public class FileController extends BaseController {
         FileSaving file = new FileSaving();
         file.setId(id);
 
-        if(!fileService.delete(file)){
-            String deleteMessage = "Необходими са права";
-            model.addAttribute("deleteMessage", deleteMessage);
-        }
-
+        this.fileService.delete(file);
 
         model.addAttribute("list", fileService.getByUser());
         return "dir/myfiles";
@@ -162,16 +165,17 @@ public class FileController extends BaseController {
     }
 
     @RequestMapping(value = "/download/{id}", method = RequestMethod.GET)
-    public String download(@PathVariable int id,Model model,HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void download(@PathVariable int id,Model model,HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         List<FileSaving> savingFiles = this.fileService.get();
+
 
         for (FileSaving savingFile : savingFiles) {
             if(savingFile.getId().equals(id)) {
                 String path = savingFile.getFilePath();
 
                 File file = new File(path);
-                String filename = URLEncoder.encode(savingFile.getName(),"UTF-8");
+                String filename = URLEncoder.encode(file.getName(),"UTF-8");
 
                 boolean enable = savingFile.isEnable();
 
@@ -189,16 +193,18 @@ public class FileController extends BaseController {
                     response.setCharacterEncoding("UTF-8");
                     response.setHeader("Content-Disposition", String.format("attachment; filename =\"%s\"", filename));
 
-                    FileCopyUtils.copy(inputStream, response.getOutputStream());
+                    FileCopyUtils.copy(inputStream,response.getOutputStream());
+
 
                 }
             }
         }
+
         model.addAttribute("list", fileService.get());
-        return "dir/delete";
+
     }
     @RequestMapping(value = "/downloadSort/{id}", method = RequestMethod.GET)
-    public String downloadSort(@PathVariable int id,Model model,HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void downloadSort(@PathVariable int id,Model model,HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         List<FileSaving> savingFiles = this.fileService.get();
 
@@ -231,7 +237,7 @@ public class FileController extends BaseController {
             }
         }
         model.addAttribute("sorting", fileService.sortByUsername());
-        return "dir/sorted";
+      //  return "dir/sorted";
     }
 
     @GetMapping("/sort")

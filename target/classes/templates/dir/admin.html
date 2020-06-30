@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"
           href="../../static/css/main.css"/>
@@ -35,13 +35,12 @@
                 </p>
               </span>
             </td>
-
             <td>
                 <div id="inner-menu">
-                    <a class="inner-menu-item" th:href="@{/admin1/{id}(id=${todo.id})}" href="#">
-                        <img th:src="@{/images/edit.png}"
-                             src="../../static/images/edit.png" hspace="20px"></a>
-                    </a>
+                        <a class="inner-menu-item" th:href="@{/admin1/{id}(id=${todo.id})}" href="#">
+                            <img th:src="@{/images/edit.png}"
+                                 src="../../static/images/edit.png" hspace="20px"></a>
+                        </a>
                 </div>
             </td>
             <td>
@@ -51,10 +50,13 @@
                 </a>
             </td>
             <td>
-                <a class="inner-menu-item" th:href="@{/admin/{id}(id=${todo.id})}" href="#">
+                <a class="inner-menu-item" th:href="@{/admin/{id}(id=${todo.id})}"
+                   onclick="return confirm('Сигурни ли сте, че искате да изтриете този потребител');"
+                   href="#">
                     <img th:src="@{/images/delete.png}"
                          src="../../static/images/edit.png" hspace="20px"></a>
                 </a>
+                <div th:if="${errorMessage}" th:text="${errorMessage}" class="alert alert-danger"/>
             </td>
         </tr>
     </table>

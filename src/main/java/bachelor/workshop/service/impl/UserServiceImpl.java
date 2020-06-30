@@ -137,21 +137,29 @@ public class UserServiceImpl implements UserService {
     @Override
     public void delete(User user) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        List<User> users =  this.userRepository.findAll();
+        List<User> users = this.userRepository.findAll();
 
-        if(authentication != null){
+        Role role = this.roleRepository.findByAndAuthority("ROLE_ROOT");
+
+        if (authentication != null) {
             for (User user1 : users) {
-                if(user.getId().equals(user1.getId())){
-                    try {
-                        FileUtils.deleteDirectory(new File(UPLOADED_FOLDER + user1.getUsername()));
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                if (user.getId().equals(user1.getId())){
+                    Set<Role> roles = user1.getAuthorities();
+
+                   if(roles.size() > 1){
+                        break;
+                    }else{
+                       try {
+                           FileUtils.deleteDirectory(new File(UPLOADED_FOLDER + user1.getUsername()));
+                           this.userRepository.delete(user);
+                       } catch (IOException e) {
+                           e.printStackTrace();
+                       }
+                   }
                 }
             }
         }
-
-        this.userRepository.delete(user);
     }
 
 }
+

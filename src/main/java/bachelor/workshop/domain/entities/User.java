@@ -14,8 +14,7 @@ public class User implements UserDetails {
     //TODO ID
     private Integer id;
 
-    @NotNull(message = "please enter a username")
-    @Size(min = 3, max = 15, message = "Username must be between 3 ot 15 symbols")
+
     private String username;
     private String password;
     private String email;
@@ -36,7 +35,7 @@ public class User implements UserDetails {
         this.id = id;
     }
 
-    @Column(name = "username", nullable = false, unique = true, updatable = false)
+//    @Column(name = "username", nullable = false, unique = true, updatable = false)
     public String getUsername() {
         return username;
     }
@@ -45,7 +44,7 @@ public class User implements UserDetails {
         this.username = username;
     }
 
-    @Column(name = "password", nullable = false)
+//    @Column(name = "password", nullable = false)
     public String getPassword() {
         return password;
     }
@@ -54,7 +53,7 @@ public class User implements UserDetails {
         this.password = password;
     }
 
-   @Column(name = "email", nullable = false, unique = true)
+//   @Column(name = "email", nullable = false, unique = true)
     public String getEmail() {
         return email;
     }
