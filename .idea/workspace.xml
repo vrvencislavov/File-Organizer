@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/CustomErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/errorPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationBeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationBeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/domain/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/myfiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/myfiles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/domain/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/domain/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/FileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/FileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/FileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/myfiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/myfiles.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +34,12 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="work_shop_db: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -237,6 +227,13 @@
       <workItem from="1593329573731" duration="5954000" />
       <workItem from="1593350256379" duration="726000" />
       <workItem from="1593517961115" duration="5757000" />
+      <workItem from="1593528049817" duration="673000" />
+      <workItem from="1593604131015" duration="568000" />
+      <workItem from="1593610754878" duration="118000" />
+      <workItem from="1593695851341" duration="3072000" />
+      <workItem from="1593699735100" duration="669000" />
+      <workItem from="1593784591799" duration="1103000" />
+      <workItem from="1593852594482" duration="242000" />
     </task>
     <task id="LOCAL-00001" summary="upload and delete">
       <created>1585747677376</created>

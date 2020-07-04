@@ -7,6 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,6 +21,7 @@ import bachelor.workshop.service.FileService;
 import bachelor.workshop.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Collection;
 import java.util.List;
 
@@ -52,16 +54,25 @@ public class AdminController {
 
 
     @RequestMapping(value = "/admin/{id}", method = RequestMethod.GET)
-    public String deleteUserPost(@PathVariable int id, Model model) {
+    public String deleteUserPost(@PathVariable int id, Model model, HttpServletRequest request, HttpServletResponse response) {
         User user = new User();
         user.setId(id);
 
-//        if(user.getId() != 1) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-         this.userService.delete(user);
-//         model.addAttribute("list2", userService.get());
-//        }
-           
+
+        User loggedUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+
+        if(user.getId().equals(loggedUser.getId()) && loggedUser.getAuthorities().size() == 1){
+            this.userService.delete(user);
+            new SecurityContextLogoutHandler().logout(request, response, authentication);
+
+            return "index";
+        }
+
+        this.userService.delete(user);
+
         model.addAttribute("list2", userService.get());
         return "dir/admin";
     }
