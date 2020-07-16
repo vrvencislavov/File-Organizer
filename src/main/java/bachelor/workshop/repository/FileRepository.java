@@ -12,6 +12,11 @@ import java.util.Optional;
 @Repository
 public interface FileRepository extends JpaRepository<FileSaving, Integer> {
 
+//    @Query("select a from FileSaving a where a.user_name like %?1% and a.enable = true")
+//    List<FileSaving> findByExtension(@Param("extension") String extension);
+
+//    @Query("select a from FileSaving a where a.user_name like %?1% and a.enable = true " +
+//            "or a.name like %?1%")
     @Query("select a from FileSaving a where a.user_name like %?1% and a.enable = true")
     List<FileSaving> findByKeyword(@Param("user_name") String user_name);
 

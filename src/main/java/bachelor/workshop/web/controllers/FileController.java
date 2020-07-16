@@ -250,4 +250,26 @@ public class FileController extends BaseController {
         }
         return "dir/sorted";
     }
+
+    @GetMapping("/sortByFileName")
+    public String sortByFileName(Model model, String keyword){
+
+        if(keyword != null){
+            model.addAttribute("sorting", this.fileService.findByKeyword(keyword));
+        }else {
+            model.addAttribute("sorting", this.fileService.sortByFileName());
+        }
+        return "dir/sorted";
+    }
+
+    @GetMapping("/sortByExtension")
+    public String sortByExtension(Model model, String keyword){
+
+        if(keyword != null){
+            model.addAttribute("sorting", this.fileService.findByKeyword(keyword));
+        }else {
+            model.addAttribute("sorting", this.fileService.sortByExtension());
+        }
+        return "dir/sorted";
+    }
 }

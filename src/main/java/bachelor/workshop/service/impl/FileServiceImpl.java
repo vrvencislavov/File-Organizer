@@ -23,10 +23,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -242,6 +239,48 @@ public class FileServiceImpl implements FileService {
         return this.fileRepository.findByKeyword(keyword);
     }
 
+    @Override
+    public List<FileSaving> sortByFileName() {
+        List<FileSaving> listOfFiles = this.fileRepository.findAll();
+
+        List<FileSaving> enableFiles = new ArrayList<>();
+
+        List<String> extensionList = new ArrayList<>();
+
+        for (FileSaving file : listOfFiles) {
+            if(file.isEnable() == true){
+                enableFiles.add(file);
+            }
+        }
+
+        List<FileSaving> sortedFiles = enableFiles.stream()
+                .sorted(Comparator.comparing(FileSaving::getName))
+                .collect(Collectors.toList());
+
+        return sortedFiles;
+    }
+
+    @Override
+    public List<FileSaving> sortByExtension() {
+        List<FileSaving> listOfFiles = this.fileRepository.findAll();
+
+        List<FileSaving> enableFiles = new ArrayList<>();
+
+        List<FileSaving> sortedFiles = new ArrayList<>();
+
+        for (FileSaving file : listOfFiles) {
+            if(file.isEnable() == true){
+                enableFiles.add(file);
+
+             String[] tokens = file.getName().split("\\.");
+                sortedFiles = enableFiles.stream()
+                        .sorted((t1,t2) -> tokens[1].compareTo(tokens[1]))
+                        .collect(Collectors.toList());
+            }
+        }
+
+        return sortedFiles;
+    }
 }
 
 

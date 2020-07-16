@@ -21,6 +21,19 @@
     </div>
 </a>
 
+<a class="inner-menu-item"  th:href="@{/home/sortByFileName}" href="#">
+    <div class="button-holder mt-3 d-flex justify-content-left">
+        <button type="submit" class="btn bg-black glow-button">Сортиране по име на файла</button>
+    </div>
+</a>
+
+<a class="inner-menu-item"  th:href="@{/home/sortByExtension}" href="#">
+    <div class="button-holder mt-3 d-flex justify-content-left">
+        <button type="submit" class="btn bg-black glow-button">Сортиране на файлове по разширение</button>
+    </div>
+</a>
+
+
 <form method="POST" th:action="@{/home/search}" th:method="GET">
     <input id="txtSearch" type="text" name="keyword"/>
     <button type="submit">Търсене</button>

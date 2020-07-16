@@ -1,5 +1,7 @@
 package bachelor.workshop.service.impl;
 
+import bachelor.workshop.domain.entities.FileSaving;
+import bachelor.workshop.repository.FileRepository;
 import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,13 +34,15 @@ public class UserServiceImpl implements UserService {
     private final ModelMapper modelMapper;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
     private final RoleService roleService;
+    private final FileRepository fileRepository;
 
     @Autowired
-    public UserServiceImpl(UserRepository userRepository, ModelMapper modelMapper, BCryptPasswordEncoder bCryptPasswordEncoder, RoleService roleService) {
+    public UserServiceImpl(UserRepository userRepository, ModelMapper modelMapper, BCryptPasswordEncoder bCryptPasswordEncoder, RoleService roleService, FileRepository fileRepository) {
         this.userRepository = userRepository;
         this.modelMapper = modelMapper;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
         this.roleService = roleService;
+        this.fileRepository = fileRepository;
     }
 
     @Autowired
@@ -139,6 +143,8 @@ public class UserServiceImpl implements UserService {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         List<User> users = this.userRepository.findAll();
 
+        List<FileSaving> files = this.fileRepository.findAll();
+
         Role role = this.roleRepository.findByAndAuthority("ROLE_ROOT");
 
         if (authentication != null) {
@@ -152,6 +158,12 @@ public class UserServiceImpl implements UserService {
                        try {
                            FileUtils.deleteDirectory(new File(UPLOADED_FOLDER + user1.getUsername()));
                            this.userRepository.delete(user);
+                           for (FileSaving file : files) {
+                               if(file.getUser_name().equals(user1.getUsername())){
+                                   this.fileRepository.delete(file);
+                               }
+                           }
+
                        } catch (IOException e) {
                            e.printStackTrace();
                        }

@@ -24,8 +24,11 @@ public interface FileService {
 
      List<FileSaving> sortByUsername();
 
-    List<FileSaving> findByKeyword(String keyword);
+     List<FileSaving> sortByFileName();
 
+    List<FileSaving> sortByExtension();
+
+    List<FileSaving> findByKeyword(String keyword);
 
 
 }

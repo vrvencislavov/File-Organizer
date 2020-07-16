@@ -4,9 +4,22 @@
     <list default="true" id="8b552a29-f573-409a-84be-2fe1476a2e2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/config/ApplicationSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/repository/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bachelor/workshop/web/controllers/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dir/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/config/ApplicationSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/config/ApplicationSecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/FileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/service/impl/FileServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bachelor/workshop/web/controllers/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dir/delete.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +47,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="work_shop_db: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -85,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/java/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -93,22 +100,22 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static" />
-      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources" />
-      <recent name="D:\java\workshop-skeleton\src\main\resources\static\css" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="softuni.workshop.error" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
       <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates\dir" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates\todo" />
       <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="softuni.workshop.error" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static" />
+      <recent name="D:\ТУ-8ми\дипломна\bachelorDegree-master\src\main\resources\static\images" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\templates" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources" />
+      <recent name="D:\java\workshop-skeleton\src\main\resources\static\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,7 +240,18 @@
       <workItem from="1593695851341" duration="3072000" />
       <workItem from="1593699735100" duration="669000" />
       <workItem from="1593784591799" duration="1103000" />
-      <workItem from="1593852594482" duration="242000" />
+      <workItem from="1593852594482" duration="432000" />
+      <workItem from="1594193667374" duration="954000" />
+      <workItem from="1594195199207" duration="64000" />
+      <workItem from="1594196391216" duration="21000" />
+      <workItem from="1594365910790" duration="2887000" />
+      <workItem from="1594626023689" duration="7346000" />
+      <workItem from="1594641305577" duration="1659000" />
+      <workItem from="1594643098112" duration="385000" />
+      <workItem from="1594712717851" duration="1876000" />
+      <workItem from="1594728930757" duration="3917000" />
+      <workItem from="1594746544445" duration="7205000" />
+      <workItem from="1594799624362" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="upload and delete">
       <created>1585747677376</created>

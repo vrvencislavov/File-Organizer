@@ -60,9 +60,7 @@ public class AdminController {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-
         User loggedUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
 
         if(user.getId().equals(loggedUser.getId()) && loggedUser.getAuthorities().size() == 1){
             this.userService.delete(user);
